@@ -20,7 +20,7 @@ const HomePage = () => {
       <p className={styles.descripcion}>
         Desarrolladora Web | Diseñadora UX/UI  | Freelancer
       </p>
-        <button className={styles.hireButton}>CONTRATAME</button>
+        <button className={styles.hireButton}>CONTRÁTAME</button>
         <button className={styles.knowMoreButton}>SABER MÁS!</button>
       </div>
       <div className={styles.rightSection}>

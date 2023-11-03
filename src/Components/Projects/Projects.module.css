@@ -1,0 +1,85 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+.projects {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: #42313B;
+    top: 0;
+    left: 0;
+}
+
+.projectCard {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.service {
+    text-align: center;
+}
+
+.title {
+    color: #FFA688;
+    font-family: Poppins;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 50px;
+    line-height: normal;
+    margin: 0;
+
+}
+
+
+.titleH4 {
+    color: #A86F8F;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10;
+}
+
+.paragraphP {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.projectImage {
+    margin-top:50px;
+    width: 250px;
+    height: 150px;
+    border: 10px solid #331C28;
+    border-radius: 8px;
+}
+
+.verMasButton {
+    background-color: #FFA688; /* Cambia el color de fondo según tu preferencia */
+    color: #42313B; /* Cambia el color de texto según tu preferencia */
+    border: none;
+    padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+    border-radius: 5px; /* Añade bordes redondeados si lo deseas */
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  /* Otros estilos aquí */
+  

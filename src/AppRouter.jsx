@@ -7,6 +7,7 @@ import Projects from './Components/Projects/Projects';
 import Opinions from './Components/WhatMeSay/WhatMeSay';
 import Skills from './Components/Skills/Skills';
 import ContactMe from './Components/ContactMe/ContactMe'
+import Footer from './Components/Footer/Footer'
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
       <Opinions />
       <Skills />
       <ContactMe />
+      <Footer/>
     </div>
   );
 };

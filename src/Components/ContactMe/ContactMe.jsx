@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './ContactMe.module.css';
 import Line from '../../images/line3.png';
 import Line2 from '../../images/Line5.png';
+import LinkedIn from '../../images/mdi_linkedin.png';
+import GitHub from '../../images/github.png';
 
 const ContactMe = () => {
+  const [githubImageScale, setGithubImageScale] = useState(1);
+  const [linkedinImageScale, setLinkedinImageScale] = useState(1);
+
+  const handleGithubMouseEnter = () => {
+    setGithubImageScale(1.1);
+  };
+
+  const handleGithubMouseLeave = () => {
+    setGithubImageScale(1);
+  };
+
+  const handleLinkedinMouseEnter = () => {
+    setLinkedinImageScale(1.1);
+  };
+
+  const handleLinkedinMouseLeave = () => {
+    setLinkedinImageScale(1);
+  };
+
   return (
     <div className={styles.contactMe}>
       <h3 className={styles.title}>CONTÁCTAME</h3>
@@ -37,15 +58,30 @@ const ContactMe = () => {
 
         </div>
 
-        <div className={styles.div3}>
-          <h2>Información de Contacto</h2>
-          <p>Celular: Numero</p>
-          <p>Email: correo</p>
-          <p>Dirección: Colombia, Medellin, Antioquia</p>
-          <p>Redes Sociales:</p>
+        <div className={styles.contactInfo}>
+          <p className={styles.contactTittle}>Teléfono</p> 
+          <p className={styles.contactDescription}>+57 323 816 5367</p> 
+          <p className={styles.contactTittle}>Email</p>
+          <p className={styles.contactDescription}>yennyfer.jarava92@gmail.com</p> 
+          <p className={styles.contactTittle}>Dirección</p>
+          <p className={styles.contactDescription}>Colombia,
+          <br />Medellín, Antioquia</p> 
+          <p className={styles.contactTittle}>Redes Sociales</p>
           <div className={styles.redesSociales}>
-            <img src="red_social_1.jpg" alt="Red Social 1" />
-            <img src="red_social_2.jpg" alt="Red Social 2" />
+         
+        <img
+          src={GitHub}
+          alt='GitHub'
+          className={styles.github}
+          onMouseEnter={handleGithubMouseEnter}
+          onMouseLeave={handleGithubMouseLeave}
+          style={{ transform: `scale(${githubImageScale})` }} />
+        <img src={LinkedIn} alt="LinkedIn"
+          className={styles.linkedin}
+          onMouseEnter={handleLinkedinMouseEnter}
+          onMouseLeave={handleLinkedinMouseLeave}
+          style={{ transform: `scale(${linkedinImageScale})` }}
+        />
           </div>
         </div>
       </div>

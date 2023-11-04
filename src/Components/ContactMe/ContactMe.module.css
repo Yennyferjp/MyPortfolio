@@ -12,6 +12,7 @@ body {
 }
 
 .title {
+    color: #A86F8F;
     font-family: 'Poppins', sans-serif;
     font-size: 46px;
     font-weight: 600;
@@ -25,7 +26,6 @@ body {
 .contactMeForm {
     display: grid;
     grid-template-columns: 40% 20% 40%;
-
 }
 
 .div1 {
@@ -35,10 +35,38 @@ body {
 
 .div2 {
     width: 100%;
+    margin-left: 20%;
 }
 
-.div3 {
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
+}
+
+.contactInfo p {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.contactTittle {
+    color: #FFA688;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+}
+
+.contactDescription {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 

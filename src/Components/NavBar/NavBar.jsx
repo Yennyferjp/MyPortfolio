@@ -4,11 +4,13 @@ import logoImage from '../../images/logoImage.png';
 
 
 const NavBar = () => {
+  
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <img src={logoImage} alt="Tu Logo" />
       </div>
+      <div>
       <ul className={styles.navlinks}>
         <li className={styles.navlink}>Inicio</li>
         <li className={styles.navlink}>Sobre Mi</li>
@@ -16,6 +18,7 @@ const NavBar = () => {
         <li className={styles.navlink}>Proyectos</li>
         <li className={styles.navlink}>Contacto</li>
       </ul>
+      </div>
     </nav>
   );
 };

@@ -64,6 +64,7 @@ li {
     align-items: center;
     font-size: 15px;
     position: fixed;
+    width: 100%;
   }
 
   .navlinks {

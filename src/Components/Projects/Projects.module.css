@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&family=Roboto:wght@400;700&display=swap');
 
 body {
     margin: 0;
@@ -10,11 +10,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    max-width: 100%;
     background-color: #42313B;
-    top: 0;
-    left: 0;
+    padding: 20px; 
 }
 
 .projectCard {
@@ -30,57 +27,74 @@ body {
 
 .title {
     color: #FFA688;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 46px;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 50px;
+    margin-bottom: 20px; 
     line-height: normal;
-    margin: 0;
-
 }
-
 
 .titleH4 {
     color: #A86F8F;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-top: 10;
+    margin-top: 10px;
 }
 
 .paragraphP {
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
 }
 
 .projectImage {
-    margin-top:50px;
     width: 250px;
     height: 150px;
+    max-width: 300px; 
+    margin: 0 auto; 
     border: 10px solid #331C28;
     border-radius: 8px;
 }
 
 .verMasButton {
-    background-color: #FFA688; 
-    color: #42313B; 
+    background-color: #A86F8F;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
     border: none;
-    padding: 10px 20px; 
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
- 
-  
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px; 
+        margin-bottom: 10px; 
+    }
+
+    .titleH4 {
+        font-size: 16px; 
+        margin-top: 5px; 
+    }
+
+    .paragraphP {
+        font-size: 12px; 
+    }
+
+    .verMasButton {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+}

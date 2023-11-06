@@ -28,7 +28,8 @@ const AboutMe = () => {
   return (
     <div className={styles.AboutMe}>
       <div className={styles.leftSection}>
-        <img src={Yennyfer} alt='Foto Yennyfer' />
+        <img 
+        src={Yennyfer} alt='Foto Yennyfer' />
       </div>
       <div className={styles.rightSection}>
         <h3 className={styles.title}>About Me</h3>

@@ -20,7 +20,7 @@ body {
 }
 
 .inlineImage {
-    padding: 0 0 50px 0;
+    padding: 0 0 20px 0;
 }
 
 .contactMeForm {
@@ -74,16 +74,18 @@ body {
     border-radius: 7px;
     background: #FFA688;
     border: none;
-    padding: 20px 50px;
+    padding: 15px 30px; 
     margin-top: 15px;
     cursor: pointer;
     color: #000;
     font-family: Poppins;
-    font-size: 32px;
-    font-style: normal;
+    font-size: 24px; 
     font-weight: 800;
     line-height: normal;
-    width: 120%;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 .redesSociales {
@@ -93,7 +95,6 @@ body {
 
 .inputContainer {
     position: relative;
-
 }
 
 .inputStyle {
@@ -107,7 +108,6 @@ body {
     opacity: 1;
     background: transparent;
     color: #FFF;
-
 }
 
 .inputStyle::placeholder {
@@ -121,3 +121,25 @@ body {
     margin-top: 20px;
 
 }
+
+@media (max-width: 768px) {
+    .contactMe {
+      padding: 10px; 
+    }
+  
+    .title {
+      font-size: 24px; 
+    }
+  
+    .contactDescription {
+      font-size: 14px; 
+    }
+    .contactTittle{
+        font-size: 20px; 
+    }
+
+    .inlineImage2{
+        display: none;
+    }
+
+  }

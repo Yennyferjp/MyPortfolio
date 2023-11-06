@@ -85,7 +85,10 @@ const HomePage = () => {
         >SABER MÁS!</button>
       </div>
       <div className={styles.rightSection}>
-        <img src={imageDev} alt="Tu Imagen" />
+      <img 
+      src={imageDev} 
+      alt="Tu Imagen" 
+      className={styles.imageDev} />
       </div>
     </div>
   );

@@ -39,16 +39,17 @@ body {
 
 @keyframes slide-in {
     0% {
-      transform: translateX(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
-  
-  .titulo {
+}
+
+.titulo {
     color: #FFF;
     font-family: Poppins;
     font-size: 2rem;
@@ -56,8 +57,8 @@ body {
     font-weight: 600;
     line-height: normal;
     margin: 0;
-    animation: slide-in 1s ease-in-out; 
-  }
+    animation: slide-in 1s ease-in-out;
+}
 
 .subtitulo {
     color: #FFA688;
@@ -72,7 +73,7 @@ body {
 .descripcion {
     color: #BCBCBD;
     font-family: Poppins;
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -105,7 +106,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 
@@ -119,4 +120,24 @@ body {
 .rightSection img {
     max-width: 100%;
     height: auto;
+}
+
+.imageDev {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .imageDev {
+        display: none;
+    }
+
+    .hireButton,
+    .knowMoreButton {
+    
+        font-size: 20px;
+      
+    }
+
 }

@@ -26,7 +26,9 @@ const ContactMe = () => {
   };
 
   return (
-    <div className={styles.contactMe}>
+    <div 
+    id={'contactme'}
+    className={styles.contactMe}>
       <h3 className={styles.title}>CONTÁCTAME</h3>
       <img src={Line} alt='Designer' className={styles.inlineImage} />
       <div className={styles.contactMeForm}>

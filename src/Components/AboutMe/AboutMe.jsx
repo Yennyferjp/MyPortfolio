@@ -26,7 +26,9 @@ const AboutMe = () => {
   };
 
   return (
-    <div className={styles.AboutMe}>
+  
+    <div 
+    id= {'aboutme'} className={styles.AboutMe}>
       <div className={styles.leftSection}>
         <img 
         src={Yennyfer} alt='Foto Yennyfer' />

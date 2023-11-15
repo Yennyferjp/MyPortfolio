@@ -45,7 +45,9 @@ const HomePage = () => {
   };
 
   return (
-    <div className={styles.homePage}>
+    <div 
+    id={'home'}
+    className={styles.homePage}>
       <div className={styles.seccionPrincipal}>
         <img src={Line} alt="Line" className={styles.line} />
         <img

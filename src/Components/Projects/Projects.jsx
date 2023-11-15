@@ -8,7 +8,9 @@ import MdLink from '../../images/mdLink.png';
 
 const Projects = () => {
   return (
-    <div className={styles.projects}>
+    <div 
+    id={'proyects'}
+    className={styles.projects}>
       <h3 className={styles.title}>MIS PROYECTOS </h3>
       <img src={Line} alt='Línea decorativa' className={styles.lineImage} />
       

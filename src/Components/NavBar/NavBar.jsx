@@ -1,31 +1,45 @@
 import React from 'react';
+import { useState } from 'react';
 import styles from './NavBar.module.css';
 import logoImage from '../../images/logoImage.png';
 
 const NavBar = () => {
 
-  function scrollIntoView(componentId) {
-    const element = document.getElementById(componentId);
-    element.scrollIntoView({
-      behavior: 'smooth', 
-    });
+  const [ menu , setMenu ] = useState( false )
+
+  const toggleMenu = () => {
+      setMenu( !menu )
   }
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <img src={logoImage} alt="Tu Logo" />
-      </div>
-      <div>
-        <ul className={styles.navlinks}>
-          <li className={styles.navlink} onClick={() => scrollIntoView('home')}>Inicio</li>
-          <li className={styles.navlink} onClick={() => scrollIntoView('aboutme')}>Sobre Mi</li>
-          <li className={styles.navlink} onClick={() => scrollIntoView('proyects')}>Proyectos</li>
-          <li className={styles.navlink} onClick={() => scrollIntoView('contactme')}>Contacto</li>
-        </ul>
-      </div>
-    </nav>
-  );
-};
+      <header className={styles.Cabecera}>
+          <div className={styles.logo}>
+           
+              
+              <img src={logoImage} alt="Logo Yennyfer" />
+              <button 
+              onClick={ toggleMenu }
+           className={styles.CabeceraButton}>
+          <svg className={styles.CabeceraSvg} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          </button>
+          <nav className={`${styles.CabeceraNav} ${menu ? styles.isActive : ''}`}>
+              <ul className={styles.CabeceraUl}>
+                  <li className={styles.CabeceraLi}><a href="#" className={styles.CabeceraA}>Inicio</a></li>
+                  <li className={styles.CabeceraLi}><a href="#" className={styles.CabeceraA}>Sobre Mi</a></li>
+                  <li className={styles.CabeceraLi}><a href="#" className={styles.CabeceraA}>Proyectos</a></li>
+                  <li className={styles.CabeceraLi}><a href="#" className={styles.CabeceraA}>Qué dicen de mi</a></li>
+                  <li className={styles.CabeceraLi}><a href="#" className={styles.CabeceraA}>Contacto</a></li>
+              </ul>
+          </nav>
+          </div>
+  
+        
+         
+  
+      </header>
+  )
+  }
 
-export default NavBar;
+  export default NavBar;

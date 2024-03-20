@@ -46,7 +46,6 @@ const HomePage = () => {
 
   return (
     <div 
-    id={'home'}
     className={styles.homePage}>
       <div className={styles.seccionPrincipal}>
         <img src={Line} alt="Line" className={styles.line} />
@@ -65,12 +64,14 @@ const HomePage = () => {
         />
         <img src={Line} alt="Line" className={styles.line} />
       </div>
-      <div className={styles.leftSection}>
+      <div className={styles.main}>
         <p className={styles.titulo}>Hola, Soy</p>
-        <p className={styles.subtitulo}>Yennyfer</p>
+        <p className={styles.name}>Yennyfer</p>
         <p className={styles.descripcion}>
           Desarrolladora Web | Diseñadora UX/UI | Freelancer
         </p>
+        </div>
+        <div className={styles.buttons}>
         <button
           className={styles.hireButton}
           onMouseEnter={handleHireMouseEnter}

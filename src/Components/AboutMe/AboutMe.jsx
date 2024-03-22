@@ -34,11 +34,16 @@ const AboutMe = () => {
         src={Yennyfer} alt='Foto Yennyfer' />
       </div>
       <div className={styles.rightSection}>
-        <h3 className={styles.title}>About Me</h3>
+        <div className={styles.titulo}><h3 className={styles.title}>About Me</h3></div>
+        
         <p className={styles.paragraph}>
           Soy una apasionada Desarrolladora Web con experiencia en administración de empresas. Mi viaje en el desarrollo web comenzó con el deseo de explorar un campo en constante evolución. Me dedico a crear soluciones innovadoras que mejoran la experiencia en línea de los usuarios. Con una sólida base en gestión de proyectos y una mentalidad orientada a resultados, abordo cada desafío con pasión.
           <br /><br />Mi objetivo principal es proporcionar soluciones tecnológicas de alta calidad que agreguen valor. Creo en la importancia de la colaboración y la creatividad para lograr resultados excepcionales. Estoy emocionada por el futuro en el desarrollo web y espero contribuir de manera significativa a esta comunidad en crecimiento.
-          <br /><br />¡Gracias por visitar mi perfil! <span className={styles.imageWrapper}>
+          <br /><br />¡Gracias por visitar mi perfil! 
+          
+          
+
+            <div className={styles.imagenes}>
             <img
               src={GitHub}
               alt='GitHub'
@@ -55,7 +60,7 @@ const AboutMe = () => {
               onMouseLeave={handleLinkedinMouseLeave}
               style={{ transform: `scale(${linkedinImageScale})` }}
             />
-          </span>
+</div>
         </p>
 
 

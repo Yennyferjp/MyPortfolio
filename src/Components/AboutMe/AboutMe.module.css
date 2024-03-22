@@ -10,7 +10,6 @@ body {
   padding: 20px;
   background-color: #42313B;
   margin-top: 0;
-  left: 0;
 }
 
 .leftSection {
@@ -25,7 +24,7 @@ body {
 
 .rightSection {
   flex: 2;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .title {
@@ -36,8 +35,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 0 40px 0;
-
 }
 
 .paragraph {
@@ -47,7 +44,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 0 40px;
+  text-align: justify;
+  
 }
 
 .inlineImage {
@@ -59,9 +57,16 @@ body {
   vertical-align: middle;
 }
 
-@media (max-width: 768px) {
+.imagenes{
+  display: flex;
+
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 904px) and (min-width: 380px) {
   .AboutMe {
-    padding: 10px; 
+    padding: 10px 0; 
   }
 
   .title {
@@ -70,6 +75,19 @@ body {
 
   .paragraph {
     font-size: 14px; 
+  }
+  .leftSection{
+    display: none;
+  }
+
+  .titulo{
+    display: ruby-text;
+  }
+
+  .imagenes{
+    display: flex;
+    justify-content: end;
+
   }
 
 }
